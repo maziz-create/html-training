@@ -5,15 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        nav ul {
+            padding-left: 0;
+        }
+
+        nav li {
+            list-style-type: none;
+            float: left;
+            margin-left: 0;
+            margin-right: 25px;
+            font-weight: 800;
+            background-color: #f3f3f3;
+        }
+
+        nav a {
+            font-size: 40px;
+            text-decoration: none;
+        }
+    </style>
     <title>My Page</title>
 </head>
 
 <body>
-    <ul>
-        <li><a href="homepage.html"></a></li>
-        <li><a href="about-us.html"></a></li>
-        <li><a href="contact.html"></a></li>
-    </ul>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="homepage.html">Yazılarım</a></li>
+        </ul>
+    </nav>
+
     <h1>Mehmet Aziz Algüllü</h1>
     <h2>Hakkımda</h2>
     <p>Merhaba ben Mehmet Aziz Algüllü! Mersinde yaşıyorum, Ankarada okuyorum. Bilimkurgu izlemeyi çok seviyorum.
@@ -48,6 +74,19 @@
     <p>Abisi işlemediği bir ceza yüzünden hapiste olan ve idam tarihi yaklaşmakta olan adamın abisini hapisten kaçırma
         hikayesi ve sonrasında peşinden düşmeyen düşman. Dizi şu anda Netflix platformunda yayında.</p>
     <p>Bu dizide en çok dikkatimi çeken Micheal Scofield ana karakteri oldu. Bu rol için seçilmiş en iyi kişi bence.</p>
+    <br><br>
+    <h2 id="#contact">Contact</h2>
+    <ul>
+        <li>
+            <a href="#">Facebook</a>
+        </li>
+        <li>
+            <a href="#">Instagram</a>
+        </li>
+        <li>
+            <a href="#">Linkedin</a>
+        </li>
+    </ul>
 </body>
 
 </html>
